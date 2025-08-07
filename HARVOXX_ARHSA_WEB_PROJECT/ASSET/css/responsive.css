@@ -1,0 +1,112 @@
+/* The code section below is for media displays below 1200px width */
+@media screen and (max-width: 1200px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero header .logo {
+    font-size: 24px;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+  }
+  .hero header {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    color: white;
+    width: 100%;
+    z-index: 20;
+  }
+  .hero header .nav-links .response {
+    display: flex;
+    width: 200px;
+  }
+  .hero header .nav-links .response button {
+    background-color: #47b2e4;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 20px;
+    color: white;
+    transition: 0.3s;
+  }
+  .hero header .nav-links .response button:hover {
+    background-color: #37517e;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 20px;
+    color: white;
+  }
+  .hero header .nav-links {
+    justify-content: center;
+    align-items: center;
+  }
+  .hero header .nav-links a {
+    display: none;
+  }
+  .hero .super header .nav-links .response .fa-bars {
+    display: block;
+    font-size: 50px;
+  }
+  .hero .body {
+    flex-wrap: wrap-reverse;
+  }
+  .hero .body .body-left {
+    width: 100%;
+  }
+  .hero .body .body-right {
+    width: 100%;
+  }
+}
+
+/* The code segment below is for the html text on the hero section. */
+@media screen and (max-width: 640px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero .body .body-left h1 {
+    color: white;
+    font-size: 32px;
+  }
+  .hero .body .body-left .btn button {
+    background-color: #47b2e4;
+    border: none;
+    width: 150px;
+    margin-right: 10px;
+    height: 35px;
+    border-radius: 20px;
+    color: white;
+    transition: 0.5s;
+  }
+  .hero .body .body-left .btn .primary:hover {
+    color: #47b2e4;
+  }
+  .hero .body .body-left .btn .active:hover {
+    background-color: #37517e;
+  }
+  .hero .body .body-left .btn .primary {
+    background-color: transparent;
+  }
+  .hero .body .body-left h3 {
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
