@@ -12,21 +12,23 @@
     align-items: center;
   }
   .hero header .logo {
-    font-size: 24px;
+    font-size: 20px;
     font-family: "Jost", sans-serif;
     font-weight: 600;
+    position: relative;
+    right: 15vw;
   }
   .hero header {
     display: flex;
-    padding: 20px;
-    align-items: center;
+    margin: 0 auto;
     color: white;
-    width: 100%;
+    width: 90vw;
     z-index: 20;
   }
   .hero header .nav-links .response {
     display: flex;
-    width: 200px;
+    width: fit-content;
+    height: fit-content;
   }
   .hero header .nav-links .response button {
     background-color: #47b2e4;
@@ -38,6 +40,10 @@
     border-radius: 20px;
     color: white;
     transition: 0.3s;
+    position: relative;
+    left: 11vw;
+    top: 0.1svw;
+    scale: 70%;
   }
   .hero header .nav-links .response button:hover {
     background-color: #37517e;
@@ -58,7 +64,10 @@
   }
   .hero .super header .nav-links .response .fa-bars {
     display: block;
-    font-size: 50px;
+    font-size: 25px;
+    position: relative;
+    left: 11vw;
+    top: 7px;
   }
   .hero .body {
     flex-wrap: wrap-reverse;
@@ -69,10 +78,173 @@
   .hero .body .body-right {
     width: 100%;
   }
+  .about .about-body {
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .about .about-body .about-left {
+    width: 70%;
+    padding-bottom: 20px;
+  }
+  .about .about-body .about-right {
+    width: 70%;
+  }
+  .faq {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .faq .faq-left {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+  .faq .faq-right {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+  .skills .super {
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .skills .super .skill-left {
+    margin: 0 auto;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+  }
+  .skills .super .skill-right {
+    margin: 0 auto;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+  }
+  .service {
+    margin: 0 auto;
+  }
+  .service .service-boxes {
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .service .service-boxes .services {
+    margin-bottom: 20px;
+  }
+  .Work-Place .work-boxes {
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .Work-Place .work-boxes .work-box {
+    width: 70%;
+    margin-bottom: 30px;
+  }
+  .action .content {
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .action .content .action-left {
+    width: 70%;
+  }
+  .action .content .action-right {
+    width: 70%;
+  }
+  .portfolio .items {
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .portfolio .items .col {
+    width: 70%;
+    margin-right: 0;
+  }
+  .team .team-boxes .team-box {
+    width: 600px;
+  }
+  .price .pricing {
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .price .pricing .price-option {
+    width: 50%;
+  }
+  .subscribe .sub {
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .subscribe .sub .sub-left {
+    margin: 0 auto;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+  }
+  .subscribe .sub .sub-right {
+    margin: 0 auto;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+  }
+  .subscribe .sub .sub-left .sub-sub input {
+    width: 100%;
+  }
+  .subscribe .sub .sub-left .sub-sub button {
+    width: fit-content;
+  }
+  .recent-blog-post .posts {
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .recent-blog-post .posts .sub-post {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .contact-us .contact-container {
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .contact-us .contact-container .contact-left {
+    margin: 0 auto;
+    width: 70%;
+    height: 650px;
+    margin-bottom: 70px;
+  }
+  .contact-us .contact-container .contact-right {
+    margin: 0 auto;
+    width: 70%;
+    height: 650px;
+  }
+  .contact-us .contact-container .contact-right .one input {
+    width: 40%;
+  }
+  .contact-us .contact-container .contact-right .two input {
+    width: 90%;
+  }
+  .contact-us .contact-container .contact-right .three input {
+    width: 90%;
+  }
+  .contact-us .contact-container .contact-right button {
+    position: relative;
+    left: 0;
+  }
+  .newsletter .your-info input {
+    width: 80%;
+  }
+  .newsletter .your-info button {
+    width: 20%;
+  }
+  .bottom .super {
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .bottom .super .btm {
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 10%;
+  }
 }
-
 /* The code segment below is for the html text on the hero section. */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 700px) {
   body {
     margin: 0;
     padding: 0;
@@ -108,5 +280,28 @@
     font-size: 16px;
     margin-top: 10px;
     margin-bottom: 20px;
+  }
+  .team .team-boxes .team-box {
+    margin: 0 auto;
+    flex-wrap: wrap;
+    height: max-content;
+  }
+  .team .team-boxes .team-box .team-box-right {
+    margin: 0 auto;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+  }
+  .team .team-box img {
+    position: relative;
+    left: 25%;
+  }
+  .team .team-boxes .team-box .team-box-left {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+  }
+  .team .team-boxes .team-box .team-box-left p {
+    text-align: center;
   }
 }

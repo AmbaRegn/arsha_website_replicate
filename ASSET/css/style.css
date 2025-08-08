@@ -14,18 +14,15 @@
 .hero header {
   display: flex;
   justify-content: space-around;
-  padding: 20px;
   align-items: center;
   color: white;
-  width: 100%;
   z-index: 20;
+  width: fit-content;
 }
 .hero header .logo {
   font-size: 24px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
-  position: relative;
-  left: -15px;
 }
 .hero header .nav-links {
   display: flex;
@@ -240,58 +237,64 @@
   width: 100%;
 }
 .skills {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 40px;
+  margin: 0 auto;
+  background-color: white;
 }
-.skills .skill-left {
+.skills .super {
+  margin: 0 auto;
+  max-width: 1600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills .super .skill-left {
   width: 40%;
 }
-.skills .skill-left img {
+.skills .super .skill-left img {
   width: 100%;
 }
-.skills .skill-right {
+.skills .super .skill-right {
   width: 40%;
 }
-.skills .skill-right h1 {
+.skills .super .skill-right h1 {
   color: #37517e;
   margin-bottom: 15px;
 }
-.skills .skill-right p {
+.skills .super .skill-right p {
   font-style: italic;
   color: #444444;
   margin-bottom: 10px;
 }
-.skills .skill-right .container {
+.skills .super .skill-right .container {
   margin-bottom: 20px;
 }
-.skills .skill-right .container .progress-bar {
+.skills .super .skill-right .container .progress-bar {
   width: 100%;
   background-color: #dadada;
   height: 10px;
 }
-.skills .skill-right .container .skill-text {
+.skills .super .skill-right .container .skill-text {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.skills .skill-right .container .progress-bar .progress-indicator {
+.skills .super .skill-right .container .progress-bar .progress-indicator {
   background-color: #37517e;
   height: 100%;
   width: 100%;
 }
-.skills .skill-right .container .progress-bar .progress-indicator-css {
+.skills .super .skill-right .container .progress-bar .progress-indicator-css {
   background-color: #37517e;
   height: 100%;
   width: 90%;
 }
-.skills .skill-right .container .progress-bar .progress-indicator-js {
+.skills .super .skill-right .container .progress-bar .progress-indicator-js {
   background-color: #37517e;
   height: 100%;
   width: 85%;
 }
-.skills .skill-right .container .progress-bar .progress-indicator-photo {
+.skills .super .skill-right .container .progress-bar .progress-indicator-photo {
   background-color: #37517e;
   height: 100%;
   width: 55%;
@@ -301,6 +304,10 @@
   padding-bottom: 50px;
   padding-top: 50px;
   margin-bottom: 10px;
+}
+.service .super {
+  margin: 0 auto;
+  max-width: 1600px;
 }
 .service h1 {
   text-align: center;
@@ -366,6 +373,10 @@
 .Work-Place {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+.Work-Place .super {
+  margin: 0 auto;
+  max-width: 1600px;
 }
 .Work-Place h1 {
   text-align: center;
@@ -511,6 +522,10 @@
   padding: 50px 0;
   padding-bottom: 200px;
 }
+.portfolio .super {
+  margin: 0 auto;
+  max-width: 1600px;
+}
 .portfolio h1 {
   color: #37517e;
   font-size: 34px;
@@ -551,6 +566,10 @@
 .team {
   background-color: white;
   padding: 20px;
+}
+.team .super {
+  margin: 0 auto;
+  max-width: 1600px;
 }
 .team h1 {
   text-align: center;
@@ -628,6 +647,10 @@
   padding: 20px;
   padding-top: 50px;
   background-color: #f4f7fcf2;
+}
+.price .super {
+  margin: 0 auto;
+  max-width: 1600px;
 }
 .price h1 {
   text-align: center;
@@ -760,6 +783,10 @@
   background-color: white;
   position: relative;
 }
+.testimonials .super {
+  margin: 0 auto;
+  max-width: 1600px;
+}
 .testimonials h1 {
   text-align: center;
   font-size: 35px;
@@ -867,6 +894,10 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.frequently_asked_questions .super {
+  margin: 0 auto;
+  max-width: 1600px;
+}
 .frequently_asked_questions h1 {
   text-align: center;
   font-size: 35px;
@@ -935,10 +966,15 @@
 }
 
 .subscribe {
+  background-color: white;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 90px;
   padding-right: 90px;
+}
+.subscribe .super {
+  margin: 0 auto;
+  max-width: 1600px;
 }
 .subscribe .sub {
   background: white;
@@ -1008,6 +1044,10 @@
   background-color: #f4f7fcf2;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.recent-blog-post .super {
+  margin: 0 auto;
+  max-width: 1600px;
 }
 .recent-blog-post h1 {
   text-align: center;
@@ -1126,6 +1166,10 @@
 }
 .contact-us {
   background-color: white;
+}
+.contact-us .super {
+  margin: 0 auto;
+  max-width: 1600px;
 }
 .contact-us h1 {
   text-align: center;
@@ -1307,7 +1351,7 @@
   background-color: white;
   border: white;
 }
-.bottom {
+.bottom .super {
   padding-top: 60px;
   padding-bottom: 50px;
   display: flex;
@@ -1315,6 +1359,10 @@
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
+}
+.bottom .super {
+  margin: 0 auto;
+  max-width: 1600px;
 }
 .bottom .ash {
   width: 25%;
